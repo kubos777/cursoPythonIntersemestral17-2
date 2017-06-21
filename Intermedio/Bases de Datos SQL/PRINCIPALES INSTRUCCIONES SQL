@@ -1,0 +1,21 @@
+PRINCIPALES INSTRUCCIONES SQL
+
+SELECT -> NOS PERMITE SELECCIONAR REGISTROS Y COLUMNAS DE UNA TABLA O MAS.
+
+EJ: SELECT * FROM alumnos   # SELECT (lo que queremos obtener) FROM (De donde lo queremos obtener) 
+	SELECT nombre, noCuenta FROM alumnos  # SELECT (lo que queremos obtener) FROM (De donde lo queremos obtener) 
+	SELECT * FROM alumnos WHERE carrera = "Computacion"  # SELECT (lo que queremos obtener) WHERE (Registro que queremos obtener a partir del atributo especificado) 
+
+INSERT ->PERMITE INSERTAR UN REGISTRO EN UNA TABLA
+
+EJ: INSERT INTO alumnos VALUES ("313127612", "INGENIERIA", "JORGE") # INSERT INTO (nombre de la tabla ) VALUES (*AQUI SI VA EN PARENTESIS: los elementos que queremos ingresar)
+
+ 	INSERT INTO alumnos (NO.CUENTA, NOMBRE) VALUES ("423423412", "NOMBRE") #EN EL CASO QUE NO REQUERIMOS INSERTAR EN TODOS LOS CAMPOS
+
+DELETE -> NOS PERTMITE ELINMINAR EL REGISTRO ESPECIFICADO DE UNA TABLA
+EJ: DELETE FROM alumnos WHERE NO.CUENTA="22313123" # DELETE FROM (nombre de la tabla) WHERE (	 Registro que queremos eliminar a partir del atributo especificado)
+
+UPDATE -> PERMITE MODIFICAR LOS DATOS DE UNA TABLA
+
+EJ: UPDATE alumnos SET alumno = "Daniel" WHERE NO.CUENTA=24123 # UPDATE (nombre de la tabla) SET (set: permite modificar el registro indicado) WHERE ( Registro que queremos modificar a partir del atributo especificado) 
+
