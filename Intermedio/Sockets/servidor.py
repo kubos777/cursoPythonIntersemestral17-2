@@ -3,6 +3,10 @@
 import socket
 
 ss=socket.socket()
+#Para poder hacer la conexion entre dos equipos cambiar la ip
+#de "localhost" al formato "192.168.1.x", recuerden que pueden
+#saber su ip con el comando "ipconfig" en Windows e "ifconfig"
+#en linux o Mac, también deben cambiarla en el otro programa
 ss.bind(("localhost",9000))
 ss.listen(1)
 
@@ -18,4 +22,5 @@ while True:
 	conn.send(input("Ingresa tu mensaje: ").encode())
 
 print("Se ha terminado la conexion")
+#Recordar que es muy importante cerrar explicitamente la conexion
 ss.close()
