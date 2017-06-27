@@ -1,8 +1,8 @@
-#########
+#############
 # RadioButton
-#########
+#############
 
-#¡Tkinter ES EN PYTHON 2!
+#Tkinter es para python 2
 from tkinter import *
 
 v=Tk()

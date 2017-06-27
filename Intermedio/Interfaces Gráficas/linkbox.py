@@ -1,6 +1,6 @@
 #########
 # Linkbox
-########
+#########
 
 
 from tkinter import *
